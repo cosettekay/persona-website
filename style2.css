@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 400, 500,700');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family:'Poppins', verdana;
+    color: #222
+}
+.welcome{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.welcome hr{
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top:.3rem;
+    margin-bottom: .1rem;
+}
+.fa-shopping-bag{
+    color: #d31010b4
+}
+.fa-book{
+    color: #1310d3b4
+}
+.fa-bed{
+    color: #05813db4
+}
+.fa-shopping-bag,.fa-book,.fa-bed{
+    font-size: 4em;
+}
+
+/*---Firefox Bug Fix ---*/
+.carousel-item{
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+/*---- Bootstrap Padding Fix --*/
+[class*= "col-"]{
+    padding: 1rem;
+}
